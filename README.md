@@ -3,25 +3,28 @@ A simulated Helpdesk web application designed to **demonstrate IT support workfl
 ---
 
 ## Project Structure
+```text
 helpdesk/
-├─ sql
-│ ├─schema.sql
-├─ web
+├─ sql/
+│ └─ schema.sql # Database schema
+├─ web/
 │ ├─ assets/
-│ │ ├─ styles.css # Custom CSS for subtle, professional visuals
+│ │ └─ styles.css # Custom CSS for subtle, professional visuals
 │ ├─ kb/
-│ │ ├─ articles.php # View knowledge base
-│ │ ├─ add.php # Add new article
-│ │ ├─ edit.php # Edit article
-│ │ ├─ view.php # View article details
+│ │ ├─ articles.php # FAQ & Guides list
+│ │ ├─ add.php # Add new guide (agents only)
+│ │ ├─ edit.php # Edit guide (agents only)
+│ │ └─ view.php # View guide details
 │ ├─ tickets/
-│ │ ├─ list.php # Tickets list
+│ │ ├─ list.php # Ticket list
 │ │ ├─ new.php # Create new ticket
-│ │ ├─ view.php # View ticket details & comments
+│ │ └─ view.php # Ticket details & comments
 │ ├─ config.php # Database configuration
 │ ├─ dashboard.php # Overview of tickets and navigation
-│ ├─ index.php / logout.php # User authentication and intro page
-├─ README.md   # current md file
+│ ├─ index.php # Login page
+│ └─ logout.php # Logout
+└─ README.md # Project README
+```
 
 
 ---
