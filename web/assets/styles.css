@@ -1,0 +1,128 @@
+/* General body styling */
+body {
+    background: linear-gradient(to right, #4e73df, #1cc88a);
+    min-height: 100vh;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Dashboard card or main content wrapper */
+.card-dashboard {
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    background-color: #fff;
+}
+
+/* Ticket stat cards */
+.stat-card {
+    border-radius: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* Lead text */
+.lead-text {
+    color: #333;
+}
+
+/* Navigation buttons wrapper */
+.nav-buttons a {
+    min-width: 160px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* Comments cards (for view.php) */
+.comment-card {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Diagnostics report styling */
+.diagnostics-report {
+    padding: 15px;
+    border-left: 4px solid #3498db;
+    background-color: #f4f4f4;
+    font-family: monospace;
+    white-space: pre-wrap;
+    margin-top: 5px;
+}
+
+/* Knowledge Base list */
+.list-group-item-action {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+.list-group-item-action:hover {
+    background-color: #e8f0fe;
+    transform: translateY(-3px);
+}
+
+/* Content card wrapper for articles or general pages */
+.content-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    margin-bottom: 2rem;
+}
+
+/* List-group items styling inside content card */
+.content-card .list-group-item {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+.content-card .list-group-item:hover {
+    background-color: #f1f5f9;
+    transform: translateY(-2px);
+}
+
+/* Section headings */
+.section-title {
+    color: #333; /* Dark gray, professional */
+    font-weight: 600;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+/* Navigation buttons */
+.btn-nav {
+    background-color: #4CAF50; /* Modern green */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-nav:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.navigation-buttons {
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Slightly standout logout button */
+.btn-logout {
+    background-color: #dc6e5f; /* muted reddish-orange, noticeable but not bright red */
+    color: #fff;
+    border-radius: 0.375rem;
+    padding: 0.5rem 1rem;
+    transition: background 0.2s;
+}
+.btn-logout:hover {
+    background-color: #c55a4c; /* slightly darker on hover */
+}
